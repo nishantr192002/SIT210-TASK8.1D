@@ -16,7 +16,8 @@ def Light_intensity(light_address):
 
 def light():
     light_address = carry_bus.read_i2c_block_data(light_sensor,High_Definition_mode)
-    value = Light_intensity(light_address)Bmp_L    rSturn value
+    value = Light_intensity(light_address) 
+    return value
  
 def  main():
     while True:
